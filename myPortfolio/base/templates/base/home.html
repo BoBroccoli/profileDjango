@@ -3,8 +3,10 @@
 
 <h1>Hello home</h1>
 <div>
-    {% for room in rooms%}
     <a href="create-room/">Create Room</a>
+    {% for room in rooms%}
+    <a href="update-room/{{room.id}}">Edit</a>
+    <a href="delete-room/{{room.id}}">Delete</a>
     <div>
         <span>@{{room.host.username}}</span>
         <h5>{{room.id}} --<a href="room/{{room.id}}"/> {{room.name}}</h5>

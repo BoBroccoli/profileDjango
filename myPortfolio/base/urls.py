@@ -5,5 +5,6 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('room/<int:id>', views.room),
     path('create-room/', views.createRoom),
+    path('update-room/<int:id>', views.updateRoom),
 
 ]
